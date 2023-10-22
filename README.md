@@ -1,66 +1,7 @@
-## Foundry
+This is a smart contract written in foundry which allows users users to fund to the contract owner given that they are funding more than the minimum value set by the owner. Further the owner can withdraw all the funds all transfer them to his/her account.
+I have used the interface AggregatorV3Interface.sol to get the priceFeeds of the different currencies to convert them to the equivalent value in USD.
+Further I have used DevOpsTools library to get the latest deployed contract address.
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+The scripts and tests for interacting and deploying the contracts and for testing the contracts are also present in the Script and Test folder.
 
-Foundry consists of:
-
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+Refer to Makefile for further assistance.
